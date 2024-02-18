@@ -10,6 +10,7 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },
   "dependencies": {
+    "downloadjs": "^1.4.7",
     "html2canvas": "^1.4.1",
     "vue": "^3.3.11"
   },

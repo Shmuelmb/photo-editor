@@ -1,7 +1,11 @@
 <template>
   <div class="result" :id="props.card.id">
-    <img class="baseImg" :src="props.imageState" alt="" />
-    <img @click="downloadImage" class="layout" src="../assets/a.png" alt="" />
+    <img class="baseImg" :src="props.imageState" alt="input-image" />
+    <img
+      @click="downloadImage"
+      class="layout"
+      :src="`src\\assets\\${props.card.imgSrc}`"
+      alt="layout" />
   </div>
 </template>
 
@@ -15,8 +19,8 @@ const props = defineProps({
 const downloadImage = () => {
   const div = document.getElementById(props.card.id);
   html2canvas(div).then((canvas) => {
-    const imageDataURL = canvas.toDataURL("image/png");
     const a = document.createElement("a");
+    const imageDataURL = canvas.toDataURL("image/svg");
     a.href = imageDataURL;
     a.download = "profilePhoto.png";
     a.click();

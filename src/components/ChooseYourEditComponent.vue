@@ -9,16 +9,17 @@
 <script setup>
 import InputComponent from "./InputComponent.vue";
 const cards = [
-  { imgSrc: ".../assets/a.png", title: "Bring Them Home Now !", id: "a" },
-  { imgSrc: ".../assets/a.png", title: "Fuck HAMAS!", id: "b" },
-  { imgSrc: ".../assets/a.png", title: "Stand With Israel", id: "c" },
+  { imgSrc: "bringThemHomeNow.png", title: "Bring Them Home Now !", id: "a" },
+  { imgSrc: "fuckhamas.png", title: "Fuck HAMAS!", id: "b" },
+  { imgSrc: "stand.png", title: "Stand With Israel", id: "c" },
 ];
 </script>
 
 <style scoped>
 .cards {
   display: flex;
-  gap: 10px;
+  gap: 30px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 </style>

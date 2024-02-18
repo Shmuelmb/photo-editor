@@ -17,7 +17,6 @@ import ChooseYourEditComponent from "./components/ChooseYourEditComponent.vue";
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100vw;
   height: 100vw;
 }
 </style>
