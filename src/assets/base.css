@@ -2,4 +2,7 @@ body {
   margin: 0;
   background: #040025;
   color: white;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: center;
 }
