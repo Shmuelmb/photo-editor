@@ -52,7 +52,7 @@ input:hover {
 }
 input:before {
   background: #f88cc9;
-  content: "Upload File...";
+  content: "Upload Profile Photo...";
   color: #fff;
   font-weight: bold;
   line-height: 1;
