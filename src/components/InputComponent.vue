@@ -15,7 +15,7 @@ const props = defineProps({
 import ResultComponent from "./ResultComponent.vue";
 import { ref } from "vue";
 
-const imageState = ref("public\\jobiden.webp");
+const imageState = ref("public\\jobiden.jpg");
 const inputHandler = (e) => {
   console.log(props.card.imgSrc);
   if (e.target.files && e.target.files[0]) {

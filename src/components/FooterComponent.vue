@@ -16,8 +16,6 @@
   </footer>
 </template>
 
-<script setup></script>
-
 <style scoped>
 .footer {
   width: 100%;
@@ -40,5 +38,10 @@
 }
 .contact-me-icons i {
   color: white;
+  transition: ease-in-out 0.3s;
+}
+
+.contact-me-icons i:hover {
+  color: rgba(255, 255, 255, 0.381);
 }
 </style>
