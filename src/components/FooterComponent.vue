@@ -20,13 +20,9 @@
 .footer {
   width: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
   text-align: center;
-  position: fixed;
-  bottom: 5px;
-  left: 0;
-  width: 100%;
+
   color: white;
 }
 .contact-me-icons {
