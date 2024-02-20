@@ -4,7 +4,7 @@
     <img
       @click="downloadImage"
       class="layout"
-      :src="`public\\${props.card.imgSrc}`"
+      :src="`${props.card.imgSrc}`"
       alt="layout" />
   </div>
 </template>
