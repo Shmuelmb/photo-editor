@@ -9,7 +9,7 @@
 <script setup>
 import InputComponent from "./InputComponent.vue";
 const cards = [
-  { imgSrc: "bringThemHomeNow.png", title: "Bring Them Home Now !", id: "a" },
+  { imgSrc: "bringThemHomeNow.png", title: "Bring Them Home Now", id: "a" },
   { imgSrc: "fuckhamas.png", title: "Fuck HAMAS!", id: "b" },
   { imgSrc: "stand.png", title: "Stand With Israel", id: "c" },
 ];

@@ -22,7 +22,7 @@
   display: flex;
   justify-content: center;
   text-align: center;
-
+  margin-top: 10px;
   color: white;
 }
 .contact-me-icons {

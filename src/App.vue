@@ -14,7 +14,6 @@ import ChooseYourEditComponent from "./components/ChooseYourEditComponent.vue";
 
 <style scoped>
 .center-col {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -1,9 +1,12 @@
 <template>
   <div class="input-component">
     <h1>{{ props.card.title }}</h1>
-    <input @change="inputHandler" type="file" />
+    <input @change="inputHandler" type="file" required />
     <div v-if="imageState">
       <ResultComponent :imageState="imageState" :card="card" />
+      <p :class="imageState !== 'jobiden.jpg' ? 'download-title' : 'none'">
+        To download your new Linkedin profile photo click on the image
+      </p>
     </div>
   </div>
 </template>
@@ -51,7 +54,8 @@ input:hover {
   opacity: 0.8;
 }
 input:before {
-  background: #f88cc9;
+  background: #000000;
+  border: 1px solid #fff;
   content: "Upload Profile Photo...";
   color: #fff;
   font-weight: bold;
@@ -60,7 +64,6 @@ input:before {
   align-items: center;
   justify-content: center;
   pointer-events: none;
-
   position: absolute;
   top: 0;
   left: 0;
@@ -69,10 +72,19 @@ input:before {
 }
 
 input:invalid:before {
-  content: "Please Upload File";
+  content: "Choose your image";
 }
 input:valid:before {
-  content: "File Uploaded";
+  content: "Image Uploaded";
   background: #000000;
+}
+.download-title {
+  font-weight: bold;
+  font-size: 10px;
+  text-align: center;
+  display: block;
+}
+.none {
+  display: none;
 }
 </style>
