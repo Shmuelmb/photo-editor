@@ -1,6 +1,5 @@
 Stack:
-Vue with JavaScript
-Prue CSS (Hate Tailwind !!)
+Vue with JavaScript and Prue CSS (Hate Tailwind !!)
 
 
 Steps for contributing:
