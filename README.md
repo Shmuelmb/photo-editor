@@ -1,3 +1,8 @@
+Stack:
+Vue with JavaScript
+Prue CSS (Hate Tailwind !!)
+
+
 Steps for contributing:
 1. Open issue
 2. Fork this repo
