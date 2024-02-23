@@ -1,8 +1,7 @@
-<script setup>
-</script>
+<script setup></script>
 
 <template>
-  <div class="custom__banner"/>
+  <div class="custom__banner"></div>
 </template>
 
 <style scoped>
@@ -13,7 +12,7 @@
   font-size: 35px;
 }
 .custom__banner::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   border-radius: 50%;
