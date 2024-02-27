@@ -1,7 +1,7 @@
 <template>
   <div class="input-component">
     <h1>{{ props.card.title }}</h1>
-    <input @change="inputHandler" type="file" required />
+    <input @change="inputHandler" type="file" accept="image/*" required />
     <div v-if="imageState">
       <ResultComponent :imageState="imageState" :card="card" />
       <p :class="imageState !== 'jobiden.jpg' ? 'download-title' : 'none'">
@@ -21,7 +21,10 @@ import { ref } from "vue";
 const imageState = ref("jobiden.jpg");
 const inputHandler = (e) => {
   console.log(props.card.imgSrc);
-  if (e.target.files && e.target.files[0]) {
+  const uploadedFile = e.target.files[0];
+  const validImageTypes = ['image/gif', 'image/jpeg', 'image/png']; // feel free to add more image file types
+
+  if (uploadedFile && validImageTypes.includes(uploadedFile['type'])) {
     const reader = new FileReader();
     reader.onload = (e) => {
       imageState.value = e.target.result;
