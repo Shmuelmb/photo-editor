@@ -11,11 +11,11 @@
 </template>
 
 <script setup>
+import ResultComponent from "./ResultComponent.vue";
 const props = defineProps({
   card: Object,
   imageState: String,
 });
-import ResultComponent from "./ResultComponent.vue";
 </script>
 
 <style scoped>
