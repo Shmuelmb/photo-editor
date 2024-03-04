@@ -4,7 +4,7 @@
     <div v-if="imageState">
       <ResultComponent :imageState="imageState" :card="card" />
       <p :class="imageState !== 'jobiden.jpg' ? 'download-title' : 'none'">
-        To download your new Linkedin profile photo click on the image
+        To download your new profile click on the image
       </p>
     </div>
   </div>
