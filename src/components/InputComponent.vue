@@ -3,9 +3,6 @@
     <h1>{{ props.card.title }}</h1>
     <div v-if="imageState">
       <ResultComponent :imageState="imageState" :card="card" />
-      <p :class="imageState !== 'jobiden.jpg' ? 'download-title' : 'none'">
-        To download your new profile click on the image
-      </p>
     </div>
   </div>
 </template>
@@ -34,7 +31,7 @@ const props = defineProps({
 
 .download-title {
   font-weight: bold;
-  font-size: 10px;
+  font-size: 15px;
   text-align: center;
   display: block;
 }
