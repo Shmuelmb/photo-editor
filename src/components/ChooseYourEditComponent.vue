@@ -1,5 +1,15 @@
 <template>
-  <input @change="inputHandler" type="file" accept="image/*" required />
+  <input @change="inputImageHandler" type="file" accept="image/*" required />
+  <h2>OR</h2>
+  <div>
+    <form
+      class="form"
+      @submit.prevent="inputUrlHandler($event.target[0].value)">
+      <input placeholder="Enter image url" type="text" required />
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
   <div class="cards">
     <div v-for="card in cards" :key="card.id">
       <InputComponent :card="card" :imageState="imageState" />
@@ -17,7 +27,7 @@ const cards = [
 ];
 const imageState = ref("jobiden.jpg");
 
-const inputHandler = (e) => {
+const inputImageHandler = (e) => {
   const uploadedFile = e.target.files[0];
   const validImageTypes = ["image/gif", "image/jpeg", "image/png"]; // feel free to add more image file types
 
@@ -29,9 +39,18 @@ const inputHandler = (e) => {
     reader.readAsDataURL(e.target.files[0]);
   }
 };
+const inputUrlHandler = (url) => {
+  imageState.value = url;
+};
 </script>
 
 <style scoped>
+.form {
+  display: flex;
+
+  justify-content: center;
+}
+
 .cards {
   display: flex;
   gap: 30px;
