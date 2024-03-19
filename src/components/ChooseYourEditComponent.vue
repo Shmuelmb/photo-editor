@@ -24,6 +24,7 @@ const cards = [
   { imgSrc: "bringThemHomeNow.png", title: "Bring Them Home", id: "a" },
   { imgSrc: "fuckhamas.png", title: "Fuck HAMAS!", id: "b" },
   { imgSrc: "stand.png", title: "Stand With Israel", id: "c" },
+  { imgSrc: "releasethehostages.png", title: "Release The Hostages", id: "d" },
 ];
 const imageState = ref("jobiden.jpg");
 
