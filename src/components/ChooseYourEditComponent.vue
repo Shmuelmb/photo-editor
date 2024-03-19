@@ -22,11 +22,13 @@ import InputComponent from "./InputComponent.vue";
 import { ref } from "vue";
 const cards = [
   { imgSrc: "bringThemHomeNow.png", title: "Bring Them Home", id: "a" },
-  { imgSrc: "fuckhamas.png", title: "Fuck HAMAS!", id: "b" },
-  { imgSrc: "stand.png", title: "Stand With Israel", id: "c" },
-  { imgSrc: "releasethehostages.png", title: "Release The Hostages", id: "d" },
+  { imgSrc: "releasethehostages.png", title: "Release The Hostages", id: "b" },
+  { imgSrc: "fuckhamas.png", title: "Fuck HAMAS!", id: "c" },
+  { imgSrc: "stand.png", title: "Stand With Israel", id: "d" },
 ];
-const imageState = ref("jobiden.jpg");
+const imageState = ref(
+  "https://scontent-fra5-2.xx.fbcdn.net/v/t39.30808-6/271872926_356649429795360_6980448622900589886_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=5f2048&_nc_ohc=KmtCGwN2RvAAX8wKPxu&_nc_ht=scontent-fra5-2.xx&oh=00_AfBeB3BbySv06d17bKDh2QXgs2cmWFOshDjm2lL6O6Oubw&oe=65FDC97E"
+);
 
 const inputImageHandler = (e) => {
   const uploadedFile = e.target.files[0];
