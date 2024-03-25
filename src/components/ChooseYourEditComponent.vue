@@ -27,7 +27,7 @@ const cards = [
   { imgSrc: "stand.png", title: "Stand With Israel", id: "d" },
 ];
 const imageState = ref(
-  "https://scontent-fra5-2.xx.fbcdn.net/v/t39.30808-6/271872926_356649429795360_6980448622900589886_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=5f2048&_nc_ohc=KmtCGwN2RvAAX8wKPxu&_nc_ht=scontent-fra5-2.xx&oh=00_AfBeB3BbySv06d17bKDh2QXgs2cmWFOshDjm2lL6O6Oubw&oe=65FDC97E"
+  "https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?t=st=1711382655~exp=1711386255~hmac=2d7a46cc07feecd6e69416aae14b8ffab0e4b0f37ab6a99f426938a4aecedd15&w=1800"
 );
 
 const inputImageHandler = (e) => {
