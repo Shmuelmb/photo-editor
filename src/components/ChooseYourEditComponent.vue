@@ -23,12 +23,10 @@ import { ref } from "vue";
 const cards = [
   { imgSrc: "bringThemHomeNow.png", title: "Bring Them Home", id: "a" },
   { imgSrc: "releasethehostages.png", title: "Release The Hostages", id: "b" },
-  { imgSrc: "fuckhamas.png", title: "Fuck HAMAS!", id: "c" },
+  // { imgSrc: "fuckhamas.png", title: "Fuck HAMAS!", id: "c" },
   { imgSrc: "stand.png", title: "Stand With Israel", id: "d" },
 ];
-const imageState = ref(
-  "https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?t=st=1711382655~exp=1711386255~hmac=2d7a46cc07feecd6e69416aae14b8ffab0e4b0f37ab6a99f426938a4aecedd15&w=1800"
-);
+const imageState = ref("template.jpeg");
 
 const inputImageHandler = (e) => {
   const uploadedFile = e.target.files[0];
