@@ -1,12 +1,16 @@
 <template>
-  <input @change="inputImageHandler" type="file" accept="image/*" required />
-  <h2>OR</h2>
+  <input
+    class="uploadDocument"
+    @change="inputImageHandler"
+    type="file"
+    accept="image/*"
+    required />
   <div>
     <form
-      class="form"
+      class="flex bg-white my-5 p-1 text-black"
       @submit.prevent="inputUrlHandler($event.target[0].value)">
       <input placeholder="Enter image url" type="text" required />
-      <button type="submit">Submit</button>
+      <button class="text-black" type="submit">Submit</button>
     </form>
   </div>
 
@@ -46,28 +50,22 @@ const inputUrlHandler = (url) => {
 </script>
 
 <style scoped>
-.form {
-  display: flex;
-
-  justify-content: center;
-}
-
 .cards {
   display: flex;
   gap: 30px;
   justify-content: center;
   flex-wrap: wrap;
 }
-input {
+.uploadDocument {
   position: relative;
   height: 40px;
   width: 200px;
   cursor: pointer;
 }
-input:hover {
+.uploadDocument:hover {
   opacity: 0.8;
 }
-input:before {
+.uploadDocument:before {
   background: #000000;
   border: 1px solid #fff;
   content: "Upload Profile Photo...";
@@ -85,10 +83,10 @@ input:before {
   bottom: 0;
 }
 
-input:invalid:before {
-  content: "Choose your image";
+.uploadDocument:invalid:before {
+  content: "Upload image";
 }
-input:valid:before {
+.uploadDocument:valid:before {
   content: "Image Uploaded";
   background: #000000;
 }

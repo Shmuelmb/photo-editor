@@ -1,6 +1,6 @@
 <template>
   <div class="input-component">
-    <h1>{{ props.card.title }}</h1>
+    <!-- <h1>{{ props.card.title }}</h1> -->
     <div v-if="imageState">
       <ResultComponent :imageState="imageState" :card="card" />
     </div>
@@ -24,6 +24,7 @@ const props = defineProps({
   gap: 20px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   transition: ease-in-out 0.2s;
+  margin-bottom: 100px;
 }
 .input-component:hover {
   scale: 1.01;
