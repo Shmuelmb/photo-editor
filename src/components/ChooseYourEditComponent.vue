@@ -21,16 +21,15 @@
 import InputComponent from "./InputComponent.vue";
 import { ref } from "vue";
 const cards = [
-  { imgSrc: "bringThemHomeNow.png", title: "Bring Them Home", id: "a" },
+  // { imgSrc: "bringThemHomeNow.png", title: "Bring Them Home", id: "a" },
   { imgSrc: "releasethehostages.png", title: "Release The Hostages", id: "b" },
   // { imgSrc: "fuckhamas.png", title: "Fuck HAMAS!", id: "c" },
   { imgSrc: "stand.png", title: "Stand With Israel", id: "d" },
 ];
 const imageState = ref("template.jpeg");
-
 const inputImageHandler = (e) => {
   const uploadedFile = e.target.files[0];
-  const validImageTypes = ["image/gif", "image/jpeg", "image/png"]; // feel free to add more image file types
+  const validImageTypes = ["image/gif", "image/jpeg", "image/png"];
 
   if (uploadedFile && validImageTypes.includes(uploadedFile["type"])) {
     const reader = new FileReader();
