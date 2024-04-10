@@ -25,7 +25,9 @@ const cards = [
   { imgSrc: "fuckhamas.png", title: "Fuck HAMAS!", id: "b" },
   { imgSrc: "stand.png", title: "Stand With Israel", id: "c" },
 ];
-const imageState = ref("jobiden.jpg");
+const imageState = ref(
+  "https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?w=1380&t=st=1712731337~exp=1712731937~hmac=8c11e6836a30c087577036d0468ddf09fee14c5efec59fdeaedcc284fb6581ee"
+);
 
 const inputImageHandler = (e) => {
   const uploadedFile = e.target.files[0];
